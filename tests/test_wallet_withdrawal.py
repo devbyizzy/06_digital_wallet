@@ -7,13 +7,13 @@ def test_valid_withdrawal_returns_correct_balance():
 
     # Arrange
     wallet_balance = 1000
-    wallet_amount = 300
+    wallet_amount = 400
 
     # Act
     withdrawn_balance = withdraw(wallet_balance, wallet_amount)
 
     # Assert
-    assert withdrawn_balance == 700
+    assert withdrawn_balance == 600
     assert type(withdrawn_balance) is int
 
 
